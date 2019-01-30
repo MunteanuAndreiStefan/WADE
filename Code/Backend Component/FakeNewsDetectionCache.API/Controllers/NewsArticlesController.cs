@@ -14,7 +14,7 @@ using FakeNewsDetectionCache.Authentication.Authorization;
 namespace FakeNewsDetectionCache.API.Controllers
 {
     //[Log]
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class NewsArticlesController : ControllerBase
@@ -46,6 +46,15 @@ namespace FakeNewsDetectionCache.API.Controllers
             var item = await NewsArticleService.GetArticleByUrl(url);
             
 
+            return new JsonResult(item);
+        }
+
+        [HttpGet("Id")]
+        public async Task<JsonResult> GetById(Guid Id)
+        {
+            var item = (await NewsArticleService.GetAsQueriable()).Where(q => q.Id == Id).FirstOrDefault();
+            if (item == null)
+                Response.StatusCode = StatusCodes.Status404NotFound;
             return new JsonResult(item);
         }
 

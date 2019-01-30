@@ -1,0 +1,111 @@
+2020-01-29T15:29:19.3738242+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T15:29:19.4659930+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T15:29:20.7814173+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T15:34:19.9924784+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T15:34:20.0806652+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T15:34:20.6890256+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T15:49:53.4771380+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T15:49:53.5629933+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T15:49:54.0501922+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T15:49:54.1883337+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2020-01-29T16:02:40.7212230+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T16:02:40.8167557+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T16:02:41.3446462+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T16:02:41.4944523+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2020-01-29T16:05:55.1346184+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T16:05:55.2219033+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T16:05:55.7322258+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T16:05:55.8723856+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2020-01-29T16:05:56.0055449+02:00  [INF] Executing DbCommand [Parameters=["@__newsArticle_Id_0='62f02916-479f-4759-d533-08d7a3799d12'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[NewsArticle_Id] = @__newsArticle_Id_0) AND @__newsArticle_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:12:47.0968678+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T16:12:47.1855192+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T16:12:47.6922512+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T16:12:47.8319077+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2020-01-29T16:12:47.9683614+02:00  [INF] Executing DbCommand [Parameters=["@__newsArticle_Id_0='62f02916-479f-4759-d533-08d7a3799d12'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[NewsArticle_Id] = @__newsArticle_Id_0) AND @__newsArticle_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:12:48.0122907+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CredibilityScore], [a].[UserId], [a].[Username]
+FROM [ApplicationUsers] AS [a]" (65d11854)
+2020-01-29T16:12:48.0293190+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='ba5acf76-a4ad-435c-af14-08d7a3871ec7'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[ApplicationUser_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:18:57.3512187+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T16:18:57.4439233+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T16:18:57.9216573+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T16:18:58.1549887+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='d6618e49-82fc-49f6-7dbf-08d7a3798bdd'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[User_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:18:58.2015721+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='deb1137e-62d9-4105-4846-08d7a38747f9'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[User_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:18:58.2093099+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2020-01-29T16:18:58.2418711+02:00  [INF] Executing DbCommand [Parameters=["@__newsArticle_Id_0='62f02916-479f-4759-d533-08d7a3799d12'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[NewsArticle_Id] = @__newsArticle_Id_0) AND @__newsArticle_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:18:58.2499377+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CredibilityScore], [a].[UserId], [a].[Username]
+FROM [ApplicationUsers] AS [a]" (65d11854)
+2020-01-29T16:18:58.2635524+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='ba5acf76-a4ad-435c-af14-08d7a3871ec7'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[ApplicationUser_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:22:25.3134852+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-29T16:22:25.4006075+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-29T16:22:25.8957684+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]" (65d11854)
+2020-01-29T16:22:26.1408389+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='d6618e49-82fc-49f6-7dbf-08d7a3798bdd'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[User_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:22:26.1860143+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='deb1137e-62d9-4105-4846-08d7a38747f9'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[User_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:22:26.1914946+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2020-01-29T16:22:26.2240499+02:00  [INF] Executing DbCommand [Parameters=["@__newsArticle_Id_0='62f02916-479f-4759-d533-08d7a3799d12'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[NewsArticle_Id] = @__newsArticle_Id_0) AND @__newsArticle_Id_0 IS NOT NULL" (65d11854)
+2020-01-29T16:22:26.2316607+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CredibilityScore], [a].[UserId], [a].[Username]
+FROM [ApplicationUsers] AS [a]" (65d11854)
+2020-01-29T16:22:26.2440322+02:00  [INF] Executing DbCommand [Parameters=["@__user_Id_0='ba5acf76-a4ad-435c-af14-08d7a3871ec7'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[ApplicationUser_Id], [v].[IsTrue], [v].[NewsArticle_Id]
+FROM [Votes] AS [v]
+WHERE ([v].[ApplicationUser_Id] = @__user_Id_0) AND @__user_Id_0 IS NOT NULL" (65d11854)

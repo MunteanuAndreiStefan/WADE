@@ -24,7 +24,9 @@ namespace FakeNewsDetectionCache.Entities.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-            }
+                //optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=FakeNewsDetectionCache;Trusted_Connection=True;");
+                //optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=WadeFakeNews;Trusted_Connection=True;");
+                }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

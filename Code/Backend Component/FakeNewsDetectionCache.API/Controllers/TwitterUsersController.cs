@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FakeNewsDetectionCache.API.Controllers
 {
     //[Log]
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TwitterUsersController : ControllerBase
@@ -35,6 +35,15 @@ namespace FakeNewsDetectionCache.API.Controllers
             if (items.Count == 0)
                 Response.StatusCode = StatusCodes.Status404NotFound;
             return new JsonResult(items);
+        }
+
+        [HttpGet("Id")]
+        public async Task<JsonResult> GetById(Guid Id)
+        {
+            var item = (await TwitterUserService.GetAsQueriable()).Where(q => q.Id == Id).FirstOrDefault();
+            if (item == null)
+                Response.StatusCode = StatusCodes.Status404NotFound;
+            return new JsonResult(item);
         }
 
         [HttpPost("{model}")]

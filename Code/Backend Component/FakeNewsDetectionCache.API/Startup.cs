@@ -112,6 +112,7 @@ namespace FakeNewsDetectionCache.API
             services.AddScoped<IApplicationUserService, ApplicationUserService>();
             services.AddScoped<INewsArticleService, NewsArticleService>();
             services.AddScoped<IVoteService, VoteService>();
+            services.AddScoped<IDataToRdfService, DataToRdfService>();
         }
 
 

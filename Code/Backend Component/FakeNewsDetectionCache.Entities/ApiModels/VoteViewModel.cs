@@ -13,7 +13,7 @@ namespace FakeNewsDetectionCache.Entities
         [Required]
         public string ApplicationUserId { get; set; }
         [Required]
-        public Guid NewsArticleId { get; set; }
+        public string NewsArticleUrl { get; set; }
 
         public bool IsTrue { get; set; }
 

@@ -1,0 +1,27 @@
+2020-01-30T10:46:51.1220719+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-30T10:46:51.2160256+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-30T10:46:52.3489453+02:00  [INF] Executing DbCommand [Parameters=["@__Id_0='f947c935-e9a6-4473-91c9-08d7a5109730'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Id] = @__Id_0) AND @__Id_0 IS NOT NULL" (65d11854)
+2020-01-30T10:54:13.1763028+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2020-01-30T10:54:13.2794747+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-30T10:54:13.5175168+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-30T10:54:14.2834654+02:00  [INF] Executing DbCommand [Parameters=["@__Id_0='f947c935-e9a6-4473-91c9-08d7a5109730'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Id] = @__Id_0) AND @__Id_0 IS NOT NULL" (65d11854)
+2020-01-30T10:54:14.4737762+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-30T10:54:14.4768908+02:00  [INF] Executing DbCommand [Parameters=["@__Id_0='f947c935-e9a6-4473-91c9-08d7a5109730'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Id] = @__Id_0) AND @__Id_0 IS NOT NULL" (65d11854)
+2020-01-30T10:54:14.6529121+02:00  [INF] Executing DbCommand [Parameters=["@__Id_0='f947c935-e9a6-4473-91c9-08d7a5109730'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Id] = @__Id_0) AND @__Id_0 IS NOT NULL" (65d11854)
+2020-01-30T10:54:17.6876485+02:00  [INF] Entity Framework Core "3.1.1" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2020-01-30T10:54:17.6891480+02:00  [INF] Executing DbCommand [Parameters=["@__Id_0='f947c935-e9a6-4473-91c9-08d7a5109730'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Id] = @__Id_0) AND @__Id_0 IS NOT NULL" (65d11854)

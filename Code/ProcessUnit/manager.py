@@ -1,7 +1,7 @@
 import re
 import json
 import requests
-from analyzers import TweetAnalyzerRandom, UserAnalyzerRandom
+from analyzers import TweetAnalyzerSemantic, UserAnalyzerSemantic
 from config import Config as cfg
 from logger import LogDecorator, log
 from twitter_utils import get_tweet_data
@@ -10,8 +10,8 @@ class Manager():
 
     def __init__(self):
 
-        self.tweet_analyzer = TweetAnalyzerRandom()
-        self.user_analyzer = UserAnalyzerRandom()
+        self.tweet_analyzer = TweetAnalyzerSemantic()
+        self.user_analyzer = UserAnalyzerSemantic()
 
     @LogDecorator()
     def generate_tweet_response(self, tweet_url, score, user_score, tweet_data):

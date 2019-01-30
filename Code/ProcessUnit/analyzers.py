@@ -19,13 +19,6 @@ class TweetAnalyzer:
         pass
 
 
-class TweetAnalyzerRandom(TweetAnalyzer):
-    
-    @LogDecorator()
-    def analyze(self, tweet_data):
-        return random.randrange(0, 100)
-
-
 class TweetAnalyzerHeuristic(TweetAnalyzer):
 
     @LogDecorator()
@@ -60,9 +53,12 @@ class UserAnalyzer:
     def analyze(self, user_id):
         pass
     
-   
-class UserAnalyzerRandom(UserAnalyzer):
-    
+   class UserAnalyzerSemantic(UserAnalyzer):
+
     @LogDecorator()
-    def analyze(self, username):
-        return random.randrange(0, 100)
+    def analyze(self, tweet_data):
+
+        sman = SemanticAnalyzer()
+        score = sman.analyze(user_data['text'])
+
+        return score
