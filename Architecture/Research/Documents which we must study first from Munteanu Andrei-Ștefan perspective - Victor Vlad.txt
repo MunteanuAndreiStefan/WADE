@@ -1,0 +1,34 @@
+
+🔵 Articles on the topic
+
+🔹 Neural Network
+https://arxiv.org/pdf/1805.08751.pdf
+
+🔹 Data Mining Perspective
+https://www.kdd.org/exploration_files/19-1-Article2.pdf
+http://ceur-ws.org/Vol-2350/paper10.pdf
+http://pike.psu.edu/publications/kdd19.pdf
+
+🔹 Unsupervised Machine Learning 
+https://www.researchgate.net/publication/328650077_Unsupervised_Fake_News_Detection_on_Social_Media_A_Generative_Approach
+https://discovery.ucl.ac.uk/id/eprint/10073077/1/Kleinberg_C18-1287.pdf
+https://cbmm.mit.edu/sites/default/files/publications/fake-news-paper-NIPS.pdf
+
+🔹 Supervised Machine Learning
+http://ceur-ws.org/Vol-2350/paper10.pdf
+https://www.courts.ca.gov/documents/BTB24-PreCon2G-3.pdf
+
+🔵 Research
+https://arxiv.org/pdf/1812.00315.pdf
+
+🔵 Resources and tools available
+
+🔹 Twitter API
+https://developer.twitter.com/en/docs/accounts-and-users/subscribe-account-activity/overview
+
+🔹 Twitter API Python
+https://stackabuse.com/accessing-the-twitter-api-with-python/
+
+🔹 Twitter API Javascript
+https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/overview
+https://blog.rapidapi.com/how-to-use-the-twitter-api-with-javascript/

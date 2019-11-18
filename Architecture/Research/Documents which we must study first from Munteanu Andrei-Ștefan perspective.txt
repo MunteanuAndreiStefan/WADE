@@ -1,0 +1,52 @@
+- Resources found:
+https://github.com/Cisco-Talos/fnc-1
+https://github.com/hanselowski/athene_system
+https://www.kdd.org/exploration_files/19-1-Article2.pdf
+http://ceur-ws.org/Vol-2350/paper10.pdf
+https://arxiv.org/pdf/1901.06437.pdf
+https://www.newsguardtech.com/wp-content/uploads/2019/10/The-Australian.-NewsGuard-shines-a-red-light-on-fake-news-sources-Oct-3-2019.pdf
+https://www.cyberghostvpn.com/privacyhub/fake-news/
+http://ceur-ws.org/Vol-2161/paper5.pdf
+https://arxiv.org/ftp/arxiv/papers/1904/1904.03989.pdf
+https://www.semanticscholar.org/paper/Explainable-Machine-Learning-for-Fake-News-Reis-Correia/b5b96a5295f1f1110d91b7a06e6e4bc8c079ff55
+https://medium.com/newco/how-to-detect-fake-news-in-real-time-9fdae0197bfd
+https://www.w3.org/2001/sw/news
+https://www.factcheck.org/
+https://www.politifact.com/
+https://www.snopes.com/
+http://verificationhandbook.com/downloads/verification.handbook.pdf
+http://fotoforensics.com/
+https://images.google.com/
+https://www.google.com/streetview/
+http://exif.regex.info/exif.cgi
+https://www.tineye.com/
+http://wikimapia.org/#lang=ro&lat=51.514200&lon=-0.093100&z=12&m=w
+https://www.mindtools.com/pages/article/fake-news.htm
+
+- Articles on the topic:
+https://en.wikipedia.org/wiki/Fake_news
+http://theconversation.com/the-language-gives-it-away-how-an-algorithm-can-help-us-detect-fake-news-120199
+https://towardsdatascience.com/fake-news-classification-via-anomaly-detection-765c4c71d539
+https://www.newsguardtech.com/
+https://www.bbc.com/news/topics/cjxv13v27dyt/fake-news
+https://fandango-project.eu/the-project/ambition/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6762082/
+https://www.econstor.eu/handle/10419/190384
+https://www.econstor.eu/handle/10419/190384
+https://www.researchgate.net/publication/333627738_Semantic_Fake_News_Detection_A_Machine_Learning_Perspective
+https://link.springer.com/chapter/10.1007/978-3-642-12630-7_16
+https://www.researchgate.net/publication/221435652_Personalized_Semantic_News_Combining_Semantics_and_Television
+https://www.bbc.co.uk/academy/en/articles/art20130724121658626
+https://www.bbc.co.uk/blogs/bbcinternet/2010/02/case_study_use_of_semantic_web.html
+
+- Other information:
+We need to decide what aproch we will use to detect the fake news. ML? Semantic text? Bayes like?
+We should look here:
+https://libguides.lmu.edu/c.php?g=595781&p=4121899
+
+https://www.theverge.com/2018/8/23/17383912/fake-news-browser-plug-ins-ai-information-apocalypse
+https://rawinfopages.co.uk/add-a-fake-news-detector-to-your-browser-to-alert-you-to-problems/
+Let's see if we can find some extension that does that and let's see if they have an implementation blog or some public articles about it.
+
+- Questions:
+From where we will validate if the information is valid?
