@@ -1,242 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Fake news detection</title>
-    <link rel="stylesheet" href="css/scholarly.min.css">
-    <script src="js/scholarly.min.js"></script>
-  </head>
-  <body prefix="schema: http://schema.org">
-    <header>
-      <div class="banner">
-        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
-        <div class="status">Community Draft</div>
-      </div>
-      <h1>Fake News Detection</h1>
-    </header>
-    <!--
-      XXX
-      - check refs
-      - the math example has too much maths
-      - bring back some of the old style
-      - make semantics, validation, processing sub-sections of each structural element
-      - have a section before that for general constructs
-        - explain why use RDFa
-        - explain our patterns: RDFa, roles
-      - figure captions need to get set throughout
-      - dedication? see doc-dedication
-      - syntactic constraints (prefix)
-      - needs more sthenurines
-      - examples of everything
-      - some notes on using Semantic CSS
-      - needs more RDFa in the spec itself
-    -->
-    <div role="contentinfo">
-      <dl>
-        <dt>Authors</dt>
-        <dd>
-          Victor Vlad
-          &amp;
-          Munteanu Andrei-Ștefan
-          &
-          Pantelemon Victor-Stefan
-        </dd>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+<meta name="keywords" content="project,infoiasi,wade,web,MSD,MunteanuAndreiStefan,VictorVlad,VictorPantelimon">
 
-      </dl>
+<title>Real time fake news detection | WADE</title>
+<meta property="og:title" content="Real time fake news detection">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Project for Web Application Development class on Distribuited System master">
+<meta property="og:description" content="Project for Web Application Development class on Distribuited System master">
+<link rel="canonical" href="https://munteanuandreistefan.github.io/WADE/">
+<meta property="og:url" content="https://munteanuandreistefan.github.io/WADE/">
+<meta property="og:site_name" content="WADE">
+<script type="application/ld+json">
+{"@type":"WebSite","url":"https://github.com/MunteanuAndreiStefan/WADE","name":"WADE","headline":"Real time fake news detection","description":"Project for WADE","@context":"http://schema.org"}</script>
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>WADE</h1>
+        <h2>Project for Web Application Development class on Distribuited System master</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/MunteanuAndreiStefan/WADE" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+		  <a href="scholarly_html/index.html" class="btn btn-github"><span class="icon"></span>Scholarly</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="real-time-fake-news-detection">Real time fake news detection</h1>
+<p>Project for Web Application Development subject on Distribuited System master</p>
+
+<p>Functional Requirements:</p>
+<ul>
+  <li>Information will be collected from Twitter (posts, user information (number of posts, folowers, account creation date, etc.))</li>
+  <li>User profiles will be built (characterized by details about the 
+user, user activity, reactions of other users to what he does on the 
+network, etc.)</li>
+  <li>A metric will be proposed to calculate the credibility of a post</li>
+  <li>A metric will be proposed for credibility of a user</li>
+  <li>A metainformation should be taken into consideration</li>
+  <li>Methods will be proposed to detect “fake” users and “fake” news</li>
+  <li>We could have a list of fake users centralized in order to get a 
+better response, after the front-end is putting the user in a category</li>
+  <li>Resources we will be centralized in order to get faster responses for already processed news</li>
+  <li>Resources will be used outside the Twitter network to validate the information (Google, blogs, newspapers, etc.)</li>
+  <li>Fronted will be able to show extra information about metrics</li>
+  <li>Fronted will be able to edit the stric level of the marking</li>
+  <li>Fronted will show analized resources</li>
+  <li>All users will be unique</li>
+  <li>User posibility to mark a post as fake manually</li>
+</ul>
+
+<p>Actors:</p>
+<ul>
+  <li>Any user that will have the plugin installed</li>
+</ul>
+
+<p>Use Cases:</p>
+<ul>
+  <li>User will be able to install the plugin from a store</li>
+  <li>User will be able to disable/enable the application.</li>
+  <li>User will be able to set the maximum/minimum level of marking a news as fake</li>
+  <li>User will be able to see results from a news</li>
+  <li>User will be able to see what resources we found</li>
+  <li>User will be able to open those resources</li>
+</ul>
+
+<p>Non-Functional Requirements:</p>
+<ul>
+  <li>Cache centralized system for all the users</li>
+  <li>Nothing on security side for the final product due it’s created only for academic purposes</li>
+  <li>The application will run for chrome and firefox</li>
+  <li>Level of trust per user, calculated with a Bayes/ML/Statistical methods over semantic or non semantic data</li>
+  <li>Take advantage of posts metadata</li>
+  <li>“Layers of trust” in order to say as fast as possible if a post is fake or not</li>
+  <li>Parser with BS4 in order to get information from trusted websites</li>
+  <li>Implement a crawler maybe with search engines in order to find credible sources</li>
+</ul>
+
+<p>Final components:</p>
+<ul>
+  <li>Frontend: the plugin</li>
+  <li>Backend: a highway for our cache system.</li>
+  <li>Process unit: on the frontend via js, compatible languages and on microservices if needed more horse power</li>
+  <li>Crawling: a component for crawling on search engines/engine</li>
+  <li>Parser: in order to get information from lists of documents found</li>
+  <li>Training unit: collect cache information and create model if needed for process unit</li>
+  <li>Twitter collector: delivers the data to the process unit</li>
+</ul>
+
+<p>Team members:</p>
+<ul>
+  <li>Munteanu Andrei-Ștefan - Contact member</li>
+  <li>Victor Vlad</li>
+  <li>Pantelemon Victor-Stefan</li>
+</ul>
+
+<p>Link to our development page:
+https://github.com/MunteanuAndreiStefan/WADE</p>
+
+      </section>
     </div>
 
-    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
-      <h2>Intoduction</h2>
-      <p>
-        The project aims to detect fake news from the Twitter platform using modern technologies
-        such as machine learning and SPARQL to verify the credibility of the content of a news story.
-        The project is divided into several modules that will be described below.
-      </p>
-    </section>
 
-    <section id="arhitecture">
-      <h2>Architecture of the Web Application</h2>
-      <p>
-
-        On the front-end we have the following modules that are
-        linked together to create a service-oriented architecture that can be scaled in the future.
-
-        <img src="images/Diag_2.png" height="580" width="805"/>
-
-        The architecture on the back-end combines several different technologies, these being separated
-        into several modules namely: cahing, processing, article scraper
-
-        <img src="images/Diag_1.png" height="733" width="733" style="margin-top: 20px;"/></p>
-
-
-    </section>
-
-    <section id="modules">
-      <h2>Modules</h2>
-        <section id="caching">
-          <h3> Cahing </h3>
-          <p>
-            The backend cache module is responsible for the delivery of the cached/processed data to the frontend.
-            The browser extensions is sending various requests to the cache module performing CRUD operations on the entities,
-            mainly read requests on the news article entity. The news article instances are uniquely identified by their uri.
-            For each article that cannot be found in the cache the caching module is calling the
-            processing module storing the result in the cache.
-          </p>
-        </section>
-        <section id="processing">
-          <h3> Processing </h3>
-          <p>
-            The purpose of the processing module is to associate a credibility score to a news story.
-            The score is determined by the result of several components, namely: the machine learning component,
-            the semantic component, the feedback from the extension users and the degree of credibility of the source of the article.
-          </p>
-        </section>
-        <section id="scrapper">
-        <h3> Article Scraper </h3>
-        <p>
-          Based on the keywords extracted from the article title, this module is using
-          Google to detect similar articles and extract the news content.
-        </p>
-      </section>
-    </section>
-
-    <section id="data">
-      <h2>Input/output Data Formats</h2>
-      <section id="model">
-        <h3>Entity Framework Model</h3>
-        <p>
-          The database was generated through entity framework using model first technique.
-          Entities were then generated from the database using entity framework core.
-          The CRUD operations are applied to them from API through the service layer.
-        </p>
-        <img src="images/Diag_3.png" height="452" width="525"/>
-      </section>
-
-      <section id="model-1">
-        <h3>Swagger schema</h3>
-        <p> Representation of the model used by the API. For more details <a href="https://fakenewsdetection.azurewebsites.net/swagger/index.html">here.</a> </p>
-        <pre><code>
-        ApplicationUserViewModel{
-        id	integer($int32)
-        nullable: true
-        username*	string
-        nullable: true
-        credibilityScore integer($int32)
-        nullable: true
-        }
-      </code></pre>
-        <pre><code>
-        NewsArticleViewModel{
-        id	integer($int32)
-        nullable: true
-        source*	string
-        nullable: true
-        credibilityScore* integer($int32)
-        nullable: true
-        userId*	integer($int32)
-        }</code></pre>
-
-      </section>
-    </section>
-
-    <section id="data_flows">
-      <h2>Non-Functional Requirements</h2>
-      <ul>
-        <li>Cache centralized system for all the users</li>
-        <li>Nothing on security side for the final product due it's created only for academic purposes</li>
-        <li>The application will run for chrome and firefox</li>
-        <li>Level of trust per user, calculated with a Bayes/ML/Statistical methods over semantic or non semantic data</li>
-        <li>Take advantage of posts metadata</li>
-        <li>"Layers of trust" in order to say as fast as possible if a post is fake or not</li>
-        <li>Parser with BS4 in order to get information from trusted websites</li>
-        <li>Implement a crawler maybe with search engines in order to find credible sources</li>
-      </ul>
-    </section>
-
-    <section id="final_users">
-      <h2>Final users</h2>
-        <p>This browser extension can be used by any user regardless of age,
-          emphasizing a minimalist design and easy to use. In order to be easy to download,
-          the extension will be added to the market used by Google. A material design was chosen to streamline the user interaction.
-          Also the colors used for the badges on twitter express the visibility of fake news.</p>
-
-      <section id="use_cases">
-        <h3>Use Cases:</h3>
-        <ul>
-          <li>User will be able to install the plugin from a store</li>
-          <li>User will be able to disable/enable the application.</li>
-          <li>User will be able to set the maximum/minimum level of marking a news as fake</li>
-          <li>User will be able to see results from a news</li>
-          <li>User will be able to see what resources we found</li>
-          <li>User will be able to open those resources</li>
-        </ul>
-      </section>
-    </section>
-
-    <section id="open_api">
-      <h2>OpenAPI</h2>
-      <p> The api documentation was generated using swagger preview version which we adapted to the .NET Core 3.0 version.  Also
-        the documentation is available <a href="https://fakenewsdetection.azurewebsites.net/swagger/index.html">here.</a> </p>
-      <img src="images/Diag_4.png" height="335" width="403"/>
-    </section>
-
-
-    <section id="external_sources">
-      <h2>External data sources</h2>
-      <ul>
-        <li>Dbpedia.org</li>
-        <li>Twitter API</li>
-        <li>Various google search results using scrapper</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>References</h2>
-      <ul>
-        <li>https://github.com/Cisco-Talos/fnc-1</li>
-        <li>https://github.com/hanselowski/athene_system</li>
-        <li>https://www.kdd.org/exploration_files/19-1-Article2.pdf</li>
-        <li>http://ceur-ws.org/Vol-2350/paper10.pdf</li>
-        <li>https://arxiv.org/pdf/1901.06437.pdf</li>
-        <li>https://www.newsguardtech.com/wp-content/uploads/2019/10/The-Australian.-NewsGuard-shines-a-red-light-on-fake-news-sources-Oct-3-2019.pdf</li>
-        <li>https://www.cyberghostvpn.com/privacyhub/fake-news/</li>
-        <li>http://ceur-ws.org/Vol-2161/paper5.pdf</li>
-        <li>https://arxiv.org/ftp/arxiv/papers/1904/1904.03989.pdf</li>
-        <li>https://www.semanticscholar.org/paper/Explainable-Machine-Learning-for-Fake-News-Reis-Correia/b5b96a5295f1f1110d91b7a06e6e4bc8c079ff55</li>
-        <li>https://medium.com/newco/how-to-detect-fake-news-in-real-time-9fdae0197bfd</li>
-        <li>https://www.w3.org/2001/sw/news</li>
-        <li>https://www.factcheck.org/</li>
-        <li>https://www.politifact.com/</li>
-        <li>https://www.snopes.com/</li>
-        <li>http://verificationhandbook.com/downloads/verification.handbook.pdf</li>
-        <li>http://fotoforensics.com/</li>
-        <li>https://images.google.com/</li>
-        <li>https://www.google.com/streetview/</li>
-        <li>http://exif.regex.info/exif.cgi</li>
-        <li>https://www.tineye.com/</li>
-        <li>http://wikimapia.org/#lang=ro&lat=51.514200&lon=-0.093100&z=12&m=w</li>
-        <li>https://www.mindtools.com/pages/article/fake-news.htm</li>
-        <li>https://en.wikipedia.org/wiki/Fake_news</li>
-        <li>http://theconversation.com/the-language-gives-it-away-how-an-algorithm-can-help-us-detect-fake-news-120199</li>
-        <li>https://towardsdatascience.com/fake-news-classification-via-anomaly-detection-765c4c71d539</li>
-        <li>https://www.newsguardtech.com/</li>
-        <li>https://www.bbc.com/news/topics/cjxv13v27dyt/fake-news</li>
-        <li>https://fandango-project.eu/the-project/ambition/</li>
-        <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6762082/</li>
-        <li>https://www.econstor.eu/handle/10419/190384</li>
-        <li>https://www.econstor.eu/handle/10419/190384</li>
-        <li>https://www.researchgate.net/publication/333627738_Semantic_Fake_News_Detection_A_Machine_Learning_Perspective</li>
-        <li>https://link.springer.com/chapter/10.1007/978-3-642-12630-7_16</li>
-        <li>https://www.researchgate.net/publication/221435652_Personalized_Semantic_News_Combining_Semantics_and_Television</li>
-        <li>https://www.bbc.co.uk/academy/en/articles/art20130724121658626</li>
-        <li>https://www.bbc.co.uk/blogs/bbcinternet/2010/02/case_study_use_of_semantic_web.html</li>
-        <li>https://libguides.lmu.edu/c.php?g=595781&p=4121899</li>
-        <li>https://www.theverge.com/2018/8/23/17383912/fake-news-browser-plug-ins-ai-information-apocalypse</li>
-        <li>https://rawinfopages.co.uk/add-a-fake-news-detector-to-your-browser-to-alert-you-to-problems/</li>
-      </ul>
-    </section>
-
-
-  </body>
-</html>
+</body></html>
