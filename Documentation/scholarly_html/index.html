@@ -19,11 +19,11 @@
     </header>
     <div role="contentinfo">
         <dl>
-            <dt>Authors</dt>
-            <dd>
-                Victor Vlad &amp; Munteanu Andrei-Ștefan & Pantelemon Victor-Stefan
-            </dd>
-
+            <dt>Authors:</dt>
+            <dd>Victor Vlad </dd>
+            <dd>Munteanu Andrei-Ștefan</dd>
+			<dd>Pantelemon Victor-Stefan</dd>
+			
         </dl>
     </div>
 
@@ -33,17 +33,55 @@
             The project aims to detect fake news from the Twitter platform using modern technologies such as machine learning and SPARQL to verify the credibility of the content of a news story. The project is divided into several modules that will be described below.
         </p>
     </section>
+	
+	<section typeof="sa:Problem" id="problem" role="doc-problem">
+        <h2>Problem solved</h2>
+        <p>
+            The problem consists into problems which are visible every day when we are navigating on twitter. That problem is that we deal with lots of fake news and fakes user. Our scope with this project is to determine the probability of a user to be fake or not. 
+        </p>
+		<p>
+            Another problem would be that there aren’t almost any real time detection tools which could do this for a home user which is browsing the web. Most of the tools on the web need an insane amount of time to do semantic analysis over that topic or to analyze the comments, reactions and other types of forms a user has over a unique post. This kind of tools aren’t actually a good tool for fake news which are starting from multiple sources at the same time making a web explosion of fake news over twitter especially.
+        </p>
+    </section>
+	
+	<section typeof="sa:SoftwareRequirements" id="Requirements" role="softwareRequirements">
+        <h2>Functional requirements</h2>
+        <p>
+            All information will be collected from twitter via api (posts, user information (number of posts, followers, account creation date, etc.). We will also have user profiles built (characterized by details about the user, user activity, reactions of other users to what he does on the network, etc.) All this information will be used in order to have:
+        </p>
+		<p> - A metric will be proposed to calculate the credibility of a post</p>
+		<p> - A metric will be proposed for credibility of a user</p>
+		<p>
+            All the available metainformation should be taken into consideration. Also, we should have a list of fake users centralized in order to get a better response, after the front-end is putting the user in a category. Resources should be centralized in order to get faster responses for already processed news. Resources will be used outside the Twitter network to validate the information (Google, blogs, newspapers, etc.) via a crawler in order to see if the information from the post/user and their metric can be considered trustful. Fronted will be able to show extra information about metrics also it should be able to edit the strictness level for marking news with the possibility of being fake or not. Fronted will show analyzed resources. User will also be able to mark a post as fake manually.
+        </p>
+    </section>
 
     <section id="arhitecture">
         <h2>Architecture of the Web Application</h2>
         <p>
-
-            On the front-end we have the following modules that are linked together to create a service-oriented architecture that can be scaled in the future.
-
-            <img src="images/Diag_2.png" height="580" width="805" /> The architecture on the back-end combines several different technologies, these being separated into several modules namely: cahing, processing, article scraper
-
+			Our fronted is made via a chrome extension which allow us to add functionality to the Chrome web browser without diving deeply into native code. Fake news browser extension was built with core technologies that web developers are very familiar with - HTML, CSS, and JavaScript. The only thing different from classic web pages are functionality to Chrome through some of the JavaScript APIs that Chrome exposes. Fake news extension was also created to work only on certain pages through the use of Page Actions, it can run code in the background using Background Pages, and can even modify an existing page loaded in the browser using Content Scripts. Also, a manifest.json file was created to tell Chrome important information about extension, like its name and which permissions it needs. Also, the extension is made of different, but cohesive, components. Components include background scripts, content scripts, UI elements and various logic files. The following modules that are linked together to create a service-oriented architecture that can be scaled in the future.
+		</p>
+            <img src="images/Diag_2.png" height="580" width="805" /> 
+			
+			<p>
+			Our backend was composed via multiple tentatives and we tried to include all classes from advanced software engineering techniques into it, so it may be considered our playground. We have started with the methodology being a model driven development one. Then with the architecture n tier pattern which was done with model first entity framework and database first with entity framework core in order to stay in our methodology grounds. The backend is a restful api which respects all SOLID principles and it is secured via authentication and authorization having multiple keys and rights. It is also secured having a token for each user generated. The deployment is done into Azure cloud due the fact that is a very friendly environment which supports also CI/CD in order for us to be able to build and deploy faster. Also, we were thinking to go from GitHub to the VSTS platform due the fact that is easier to follow all tasks assigned with repos and with pipelines for CI/CD and test plans. Our architecture is service oriented and we use in our project python, JavaScript and C#.
+			You can find more details about this into this BPMN.</p>
             <img src="images/Diag_1.png" height="733" width="733" style="margin-top: 20px;" /></p>
 
+    </section>
+
+    <section typeof="sa:SoftwareRequirements" id="dataFlows" role="softwareRequirements">
+        <h2>Non-Functional Requirements</h2>
+        <ul>
+            <li>Cache centralized system for all the users</li>
+            <li>Nothing on security side for the final product due it's created only for academic purposes</li>
+            <li>The application will run for chrome and firefox</li>
+            <li>Level of trust per user, calculated with a Bayes/ML/Statistical methods over semantic or non semantic data</li>
+            <li>Take advantage of posts metadata</li>
+            <li>"Layers of trust" in order to say as fast as possible if a post is fake or not</li>
+            <li>Parser with BS4 in order to get information from trusted websites</li>
+            <li>Implement a crawler maybe with search engines in order to find credible sources</li>
+        </ul>
     </section>
 
     <section id="modules">
@@ -57,16 +95,50 @@
         <section id="processing">
             <h3> Processing </h3>
             <p>
-                The purpose of the processing module is to associate a credibility score to a news story. The score is determined by the result of several components, namely: the machine learning component, the semantic component, the feedback from the extension users and the degree of credibility of the source of the article.
+                Process Unit is a server that receives requests with twitter URL Based on a tweet, we can extract the text content and query Google with the tokenized (cleaned up) text. We find articles from which we extract the body and compare semantically with the tweet. We average with all the results found and that's the score.
             </p>
         </section>
         <section id="scrapper">
             <h3> Article Scraper </h3>
             <p>
-                Based on the keywords extracted from the article title, this module is using Google to detect similar articles and extract the news content.
+                The crawling service is a simple python script which is able to crawl the google with the scope of finding articles which could contain interest keys for us. Then those links are saved and they are opened in parallel in order to crawl them as well and see if that information is or not of any help in our process unit. We also use google api.
             </p>
         </section>
+		<section id="twitterScrapper">
+            <h3> Twitter Scraper </h3>
+            <p>
+                The scrapper for twitter (* requires developer account for API keys, * runs non-stop by searching for certain keywords) is able to save data in mongo collections about user, text, date of post, number of likes, retweets, if it was posted as a response, but also data about user. It’s exporting from mongo a json which is then used in a Redis queue with the scope of being processed with multithreading. On its part we are also using a Bayes and other ML algorithms to see if the tags like emails or other things match with our keywords needed. Also, this API allows us to give a credibility log. Score over the users in terms of fakeness.
+            </p>
+        </section>
+		<section id="moreInfoModues">
+            <h3> Information about modules implementation </h3>
+            <p>Some important things that didn’t come along as expected with this module it would be that: </p>
+			<ul>
+				<li> It did not come out to extract semantic relationships from the text. It is possible to classify words into speech / sentence parts but we couldn’t do it in time to use pairs to check ontologies.</li>
+				<li> We tried instead to compare the whole article with the tweet, to take each sentence and compare it, but it takes a long time after that. We could use a heuristic with which to exclude sentences that we are not interested in to, at least that was our final resolution in order to make it faster.</li>
+			</ul>
+			<p>In order to implement this, we used modules for:</p>
+			<ul>
+				<li>Tokenization, lemmatization, stop words – nltk</li>
+				<li>Semantic analyze – genism and nltk</li>
+				<li>Semantic querry – SparQl</li>
+				<li>Hosting – Azure services</li>
+				<li>Backend – EF& .NET Core 3.0</li>
+				<li>Tweepy – twitter api</li>
+				<li>Extract information from articles – newspaper</li>
+				<li>Calculate things – numpy</li>
+				<li>Server for module – flask</li>
+				<li>Requests to external sources - Req.py</li>
+				<li>Scraping pages for information - BeautifulSoup4</li>
+			</ul>
+			<p>All our presented modules are designed with aspect-oriented programming and monitoring oriented programming in mind, also for critical paths we developed functional testing (unit testing) and from non functional perspective we created a collection in postman. In order to have the project in the current form we did a lot of refactoring. Now almost everything is decupled and can be replaced with anything.</p>
+			<p>Comparing our solution with others it isn’t the best from our minimal tests till now, from the point of metrics resulted not architecture, an attached annexes which will come will describe this study with more statistics, but from our tests we can only get high confidence of a fake news only when we have some more information about it and the text is on other safe sources already.</p>
+        </section>
     </section>
+
+
+
+
 
     <section id="data">
         <h2>Input/output Data Formats</h2>
@@ -336,25 +408,64 @@
 
     </section>
 
-    <section id="data_flows">
-        <h2>Non-Functional Requirements</h2>
-        <ul>
-            <li>Cache centralized system for all the users</li>
-            <li>Nothing on security side for the final product due it's created only for academic purposes</li>
-            <li>The application will run for chrome and firefox</li>
-            <li>Level of trust per user, calculated with a Bayes/ML/Statistical methods over semantic or non semantic data</li>
-            <li>Take advantage of posts metadata</li>
-            <li>"Layers of trust" in order to say as fast as possible if a post is fake or not</li>
-            <li>Parser with BS4 in order to get information from trusted websites</li>
-            <li>Implement a crawler maybe with search engines in order to find credible sources</li>
-        </ul>
+    <section id="QoS">
+        <h2>Quality of service</h2>
+        <p>We identified 2 metrics:</p>
+
+        <section id="responseTime">
+            <h3>Response Time</h3>
+            <ul>
+                <li>With application stopped and tweet not in db: avg. 1m 18s</li>
+				<li>With application stopped and tweet exists: avg. 11s</li>
+				<li>With application started and process unit stopped: avg. 52s</li>
+                <li>With application started and tweet in db: avg. 126ms</li>
+				<li>With application started and tweet not in db: avg. 9s</li>
+				<li>Restart time api: avg. 11s</li>
+				<li>Restart time process unit: avg. 51s</li>
+				<li>Number of requests that may not receive answer: 1.3%</li>
+            </ul>
+        </section>
+		
+		<section id="Credibility">
+            <h3>Credibility score</h3>
+            <ul>
+                <li>User credibility marking: 53% hits on tested subjects</li>
+				<li>Posts credibility: 65% hits on tested tweets</li>
+            </ul>
+        </section>
     </section>
 
-    <section id="final_users">
+    <section id="FutureWork">
+        <h2>Future work</h2>
+        <p>We identified three main objectives which can be pursued in order to greatly improve the overall robustness of our project:</p>
+
+        <section id="toDoItem-1">
+            <h3>Sentence analysis</h3>
+            <ul>
+                <li>It would make it easier for us to exclude sentences that are not strongly related to the subject tweet (either heuristics or something else)</li>
+                <li>Analyzing individual question would make it easier to detect negations (which we currently don't detect)</li>
+            </ul>
+        </section>
+		
+		<section id="toDoItem-2">
+            <h3>Semantic relation extraction and evaluation	</h3>
+            <ul>
+                <li>Useful for occasions when the tweet content is simple and we cannot rely on written articles about the topic</li>
+            </ul>
+        </section>
+		<section id="toDoItem-2">
+            <h3>Distributed computing for demanding steps</h3>
+            <ul>
+                <li>Some steps can benefit from distributed computing, such as web scraping and sentence analysis, at this moment being on services only</li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="finalUsers">
         <h2>Final users</h2>
         <p>This browser extension can be used by any user regardless of age, emphasizing a minimalist design and easy to use. In order to be easy to download, the extension will be added to the market used by Google. A material design was chosen to streamline the user interaction. Also the colors used for the badges on twitter express the visibility of fake news.</p>
 
-        <section id="use_cases">
+        <section id="useCases">
             <h3>Use Cases:</h3>
             <ul>
                 <li>User will be able to install the plugin from a store</li>
@@ -363,23 +474,34 @@
                 <li>User will be able to see results from a news</li>
                 <li>User will be able to see what resources we found</li>
                 <li>User will be able to open those resources</li>
+				<li>User will be able to give a vote to a post</li>
             </ul>
         </section>
     </section>
 
-    <section id="open_api">
+    <section id="openApi">
         <h2>OpenAPI</h2>
         <p> The api documentation was generated using swagger preview version which we adapted to the .NET Core 3.0 version. Also the documentation is available <a href="https://fakenewsdetection.azurewebsites.net/swagger/index.html">here.</a> </p>
-        <img src="images/Diag_4.png" height="335" width="403" />
+        <img src="images/Diag_4.png" height="790" width="830" />
     </section>
 
-    <section id="external_sources">
+    <section id="externalSources">
         <h2>External data sources</h2>
         <ul>
             <li>Dbpedia.org</li>
             <li>Twitter API</li>
             <li>Various google search results using scrapper</li>
         </ul>
+    </section>
+	
+	<section typeof="sa:Conclusion" id="Conclusions" role="conclusions">
+            <h3>Conclusions:</h3>
+            <ul>
+                <li>Having fake news detection as primary objective, our proposed method can have decent results when focused on tweets about popular topics that can be verified via written articles found on the web.</li>
+				<li>For cases where there are multiple subjects into a article it may take too much time to get all evaluation over ontology, but if it is extracted by the subjects/predicats it will make it faster, but not enough trustful.</li>
+                <li>The methods are not suited for tweets that have multiple subjects or predicats due the fact they may put a question mark over the chunks we get for semantic relation extraction and evaluation based on ontology.</li>
+            </ul>
+        </section>
     </section>
 
     <section id="biblio-references">
