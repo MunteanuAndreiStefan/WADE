@@ -56,3 +56,5 @@ Team Component:
   - Munteanu Andrei-Ștefan
   - Victor Vlad
   - Pantelemon Victor-Stefan
+  
+  Link to our blog: http://students.info.uaic.ro/~stefan.munteanu/WADE/
