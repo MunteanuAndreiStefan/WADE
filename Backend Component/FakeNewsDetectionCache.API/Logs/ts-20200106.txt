@@ -1,5 +1,0 @@
-2020-01-06T23:48:53.1724465+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
-2020-01-06T23:48:53.3068978+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
-2020-01-06T23:48:53.9786945+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
-""SELECT [t].[Id], [t].[CredibilityScore], [t].[Username]
-FROM [TwitterUsers] AS [t]" (65d11854)
