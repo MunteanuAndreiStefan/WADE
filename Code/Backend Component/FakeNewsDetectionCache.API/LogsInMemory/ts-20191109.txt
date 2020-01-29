@@ -1,0 +1,2 @@
+2019-11-09T22:33:35.9649703+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-11-09T22:33:36.0015188+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "SensitiveDataLoggingEnabled StoreName=fakedb " (9958f5bb)

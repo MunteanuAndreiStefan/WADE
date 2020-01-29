@@ -1,0 +1,178 @@
+2019-12-11T01:16:36.7461910+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:16:36.8408340+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:16:38.2336996+02:00  [INF] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]" (65d11854)
+2019-12-11T01:19:29.5459222+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:19:29.6332180+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:19:30.7149266+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://localhost:44345/swagger/index.html' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:22:46.9095449+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:22:47.0022262+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:22:48.1537212+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:29:31.6490064+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:29:31.7517802+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:29:32.4071252+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:29:33.4410165+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:29:33.6606158+02:00  [INF] Executing DbCommand [Parameters=["@p0='43' (Nullable = true), @p1='nice girl' (Nullable = false) (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [TwitterUsers] ([CredibilityScore], [Username])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [TwitterUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (65d11854)
+2019-12-11T01:29:33.7938230+02:00  [INF] Executing DbCommand [Parameters=["@p0='66' (Nullable = true), @p1='https://twitter.com/christapeterso/status/1090093182447104000' (Nullable = false) (Size = 4000), @p2='2003'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [NewsArticles] ([CredibilityScore], [Source], [User_Id])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [NewsArticles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (65d11854)
+2019-12-11T01:30:12.2724389+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:30:12.2777799+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:30:16.6567479+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:30:16.6590729+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:30:17.6659214+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:30:17.6675923+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:30:19.8304371+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:30:19.8335104+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:04.0671113+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:31:04.0688838+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:12.6677322+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:31:12.6693271+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:13.4289337+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:31:13.4307434+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:14.1600280+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:31:14.1620752+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1090093182447104000' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:23.0935792+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:31:23.0952114+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/jbouie/status/1204248443188854784' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:23.8917884+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='b-boy bouiebaisse' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:31:23.8962298+02:00  [INF] Executing DbCommand [Parameters=["@p0='10' (Nullable = true), @p1='b-boy bouiebaisse' (Nullable = false) (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [TwitterUsers] ([CredibilityScore], [Username])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [TwitterUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (65d11854)
+2019-12-11T01:31:23.9026902+02:00  [INF] Executing DbCommand [Parameters=["@p0='39' (Nullable = true), @p1='https://twitter.com/jbouie/status/1204248443188854784' (Nullable = false) (Size = 4000), @p2='2004'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [NewsArticles] ([CredibilityScore], [Source], [User_Id])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [NewsArticles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (65d11854)
+2019-12-11T01:32:15.2852273+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:32:15.2868284+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1204295221959245824' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:32:15.9695810+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:32:15.9855738+02:00  [INF] Executing DbCommand [Parameters=["@p2='0', @p0='43' (Nullable = true), @p1='nice girl' (Nullable = false) (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [TwitterUsers] SET [CredibilityScore] = @p0, [Username] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;" (65d11854)
+2019-12-11T01:33:46.5644014+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:33:46.5663725+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1204295221959245824' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:34:05.8525198+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:38:02.7568390+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:38:02.8437844+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:38:03.4113429+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1204295221959245824' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:38:04.2358489+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:38:42.4292861+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:38:42.4352403+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1204295221959245824' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:38:56.5069584+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:43:04.6711762+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:43:04.7620072+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:43:05.3417825+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1204295221959245824' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:43:15.7872196+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:47:34.1756982+02:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data, this mode should only be enabled during development. (2b730620)
+2019-12-11T01:47:34.2715751+02:00  [INF] Entity Framework Core "3.0.0" initialized '"Repository"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "SensitiveDataLoggingEnabled " (9958f5bb)
+2019-12-11T01:47:34.8759375+02:00  [INF] Executing DbCommand [Parameters=["@__url_0='https://twitter.com/christapeterso/status/1204295221959245824' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CredibilityScore], [n].[Source], [n].[User_Id]
+FROM [NewsArticles] AS [n]
+WHERE ([n].[Source] = @__url_0) AND @__url_0 IS NOT NULL" (65d11854)
+2019-12-11T01:47:42.6673644+02:00  [INF] Executing DbCommand [Parameters=["@__processedNewsArticle_user_0='nice girl' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[CredibilityScore], [t].[Username]
+FROM [TwitterUsers] AS [t]
+WHERE ([t].[Username] = @__processedNewsArticle_user_0) AND @__processedNewsArticle_user_0 IS NOT NULL" (65d11854)
+2019-12-11T01:47:45.5683602+02:00  [INF] Executing DbCommand [Parameters=["@p2='2003', @p0='43' (Nullable = true), @p1='nice girl' (Nullable = false) (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [TwitterUsers] SET [CredibilityScore] = @p0, [Username] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;" (65d11854)
+2019-12-11T01:47:49.0055770+02:00  [INF] Executing DbCommand [Parameters=["@p0='58' (Nullable = true), @p1='https://twitter.com/christapeterso/status/1204295221959245824' (Nullable = false) (Size = 4000), @p2='2003'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [NewsArticles] ([CredibilityScore], [Source], [User_Id])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [NewsArticles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (65d11854)

@@ -1,0 +1,387 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.API\\FakeNewsDetectionCache.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.API\\FakeNewsDetectionCache.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.API\\FakeNewsDetectionCache.API.csproj",
+        "projectName": "FakeNewsDetectionCache.API",
+        "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.API\\FakeNewsDetectionCache.API.csproj",
+        "packagesPath": "C:\\Users\\maste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\maste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Authentication\\FakeNewsDetectionCache.Authentication.csproj": {
+                "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Authentication\\FakeNewsDetectionCache.Authentication.csproj"
+              },
+              "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj"
+              },
+              "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Service\\FakeNewsDetectionCache.Service.csproj": {
+                "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Service\\FakeNewsDetectionCache.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Authentication\\FakeNewsDetectionCache.Authentication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Authentication\\FakeNewsDetectionCache.Authentication.csproj",
+        "projectName": "FakeNewsDetectionCache.Authentication",
+        "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Authentication\\FakeNewsDetectionCache.Authentication.csproj",
+        "packagesPath": "C:\\Users\\maste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Authentication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\maste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj",
+        "projectName": "FakeNewsDetectionCache.Entities",
+        "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj",
+        "packagesPath": "C:\\Users\\maste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\maste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj",
+        "projectName": "FakeNewsDetectionCache.Interfaces",
+        "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\maste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\maste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj": {
+                "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Service\\FakeNewsDetectionCache.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Service\\FakeNewsDetectionCache.Service.csproj",
+        "projectName": "FakeNewsDetectionCache.Service",
+        "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Service\\FakeNewsDetectionCache.Service.csproj",
+        "packagesPath": "C:\\Users\\maste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\maste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj": {
+                "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Entities\\FakeNewsDetectionCache.Entities.csproj"
+              },
+              "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\maste\\Desktop\\wade\\Backend\\FakeNewsDetectionCache\\FakeNewsDetectionCache.Interfaces\\FakeNewsDetectionCache.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
