@@ -1,0 +1,9 @@
+[2020-01-28 00:27:37,568] START analyze_tweet - (<manager.Manager object at 0x0DDD8AF0>, 'https://twitter.com/KMorrix/status/1221576234242658305') - {}
+[2020-01-28 00:28:08,381] 	START analyze - (<analyzers.UserAnalyzerRandom object at 0x0DDD8C70>, 'KMorrix') - {}
+[2020-01-28 00:28:08,381] 	END   analyze - 13
+[2020-01-28 00:28:08,382] 	MSG   User not found in cache. Submitting new entry: {"id": 0, "username": "KMorrix", "credibilityScore": 13}
+[2020-01-28 00:28:08,382] 	MSG   User score: 13
+[2020-01-28 00:28:08,781] 	END   analyze - 48
+[2020-01-28 00:28:08,781] 	MSG   Tweet score: 48
+[2020-01-28 00:28:08,781] 	MSG   Tweet score (user score adjusted): 39
+[2020-01-28 00:28:08,781] 	MSG   Tweet not found in cache. Submitting new entry: {"id": 0, "source": "https://twitter.com/KMorrix/status/1221576234242658305", "credibilityScore": 39, "userId": 1}

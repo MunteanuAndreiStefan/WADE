@@ -9,7 +9,6 @@ from googlesearch import search
 from newspaper import Article
 from logger import LogDecorator, log
 
-
 class SemanticAnalyzer:
 
     def __init__(self):
@@ -27,7 +26,7 @@ class SemanticAnalyzer:
 
     @LogDecorator()
     def remove_stop_words(self, words):
-        stop_words = set(stopwords.words('english'))
+        stop_words = set(stopwords.words('english')) 
         return [w for w in words if not w in stop_words]
 
     @LogDecorator()
@@ -54,7 +53,7 @@ class SemanticAnalyzer:
                 article.parse()
             except:
                 continue
-
+            
             # article.nlp()
 
             data.append(article)
@@ -83,20 +82,21 @@ class SemanticAnalyzer:
         if not os.path.exists('workdir'):
             os.mkdir('workdir')
 
-        sims = gensim.similarities.Similarity('workdir/', tfidf[corpus], num_features=len(dictionary))
+        sims = gensim.similarities.Similarity('workdir/',tfidf[corpus], num_features=len(dictionary))
 
         results = []
 
         data = self.get_articles(text)
 
         for article in data:
+
             line = article.text
 
             query_doc = [w.lower() for w in word_tokenize(line)]
             query_doc_bow = dictionary.doc2bow(query_doc)
 
             query_doc_tf_idf = tfidf[query_doc_bow]
-
+            
             # print(sims[query_doc_tf_idf], article.title, np.average(sims[query_doc_tf_idf])) 
 
             article_score = int(np.max(sims[query_doc_tf_idf]) * 100)
@@ -106,7 +106,6 @@ class SemanticAnalyzer:
             results.append(article_score)
 
         return max(results)
-
 
 if __name__ == '__main__':
     example = 'The 2019 Soul Train Music Awards are in the books, ending in a big night for Chris Brown and his song with Drake, "No Guidance," which took home three trophies. Here\'s the full list of winners.'
