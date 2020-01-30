@@ -1,0 +1,10 @@
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.App {
+  text-align: center;
+  width:300px;
+  height:550px;
+}
